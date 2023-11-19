@@ -1,0 +1,10 @@
+---
+export const prerender = true;
+import Layout from "../layout/Layout.astro";
+import Courses from "../components/Courses.svelte";
+---
+
+<Layout>
+  <Courses client:only={"svelte"} />
+</Layout>
+
